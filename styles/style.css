@@ -1,20 +1,20 @@
 @font-face {
     font-family: 'Aspekta';
-    src: url('fonts/Aspekta-100.ttf') format('truetype');
+    src: url('../fonts/Aspekta-100.ttf') format('truetype');
     font-weight: light;
     font-style: light;
 }
 
 @font-face {
     font-family: 'Aspekta';
-    src: url('fonts/Aspekta-500.ttf') format('truetype');
+    src: url('../fonts/Aspekta-500.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Aspekta';
-    src: url('fonts/Aspekta-1000.ttf') format('truetype');
+    src: url('../fonts/Aspekta-1000.ttf') format('truetype');
     font-weight: bold;
     font-style: bold;
 }
