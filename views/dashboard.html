@@ -1,0 +1,15 @@
+document.getElementById('save-settings').addEventListener('click', () => {
+    const newSettings = {
+        prefix: document.getElementById('prefix').value,
+        welcomeMessage: document.getElementById('welcome-message').value,
+    };
+
+    fetch('https://flauxbot.com/api/update-settings', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ guildId: selectedGuildId, newSettings })
+    })
+    .then(response => response.json())
+    .then(data => alert(data.message))
+    .catch(error => console.error('Error updating settings:', error));
+});
