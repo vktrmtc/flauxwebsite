@@ -1,0 +1,198 @@
+@font-face {
+    font-family: 'Aspekta';
+    src: url('fonts/Aspekta-100.ttf') format('truetype');
+    font-weight: light;
+    font-style: light;
+}
+
+@font-face {
+    font-family: 'Aspekta';
+    src: url('fonts/Aspekta-500.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aspekta';
+    src: url('fonts/Aspekta-1000.ttf') format('truetype');
+    font-weight: bold;
+    font-style: bold;
+}
+
+details > summary span.icon {
+    font-family: 'Aspekta';
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+    margin-left: auto;
+    color: #808080;
+    display: flex;
+    justify-content: top;
+    align-items: center;
+}
+
+details[open] summary span.icon {
+    transform: rotate(180deg);
+}
+
+.legal-section {
+    background-color: #121212;
+    box-shadow: 0 0 5px rgb(40, 40, 40);
+    padding: 20px;
+    color: beige;
+    border-radius: 10px;
+    margin-left: 7%;
+    margin-bottom: 20px;
+    user-select: none;
+    width: 90%;
+}
+
+.legal-section:first-of-type {
+    margin-top: 70px;
+}
+
+.legal-section:last-of-type {
+    margin-bottom: 40px;
+}
+
+.legal-category {
+    font-family: 'Aspekta';
+    font-size: 30px;
+    color: #ff6252;
+    margin-bottom: 10px;
+    --bg-size: 400%;
+    --color-one: #ff6252;
+    --color-two: #ff9752;
+    background: linear-gradient(
+        90deg,
+        var(--color-one),
+        var(--color-two),
+        var(--color-one)
+    ) 0 0 / var(--bg-size) 100%;
+    color: transparent;
+    background-clip: text;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .legal-category {
+        animation: move-bg 12s linear infinite;
+    }
+    @keyframes move-bg {
+        to {
+            background-position: var(--bg-size) 0;
+        }
+    }
+}
+
+.legal-container {
+    font-family: 'Aspekta';
+    font-size: 30px;
+}
+
+.legal-container-description {
+    font-family: 'Aspekta';
+    font-size: 15px;
+    color: #808080;
+    margin-bottom: 20px;
+}
+
+.down20 {
+    margin-top: 30px;
+}
+
+.legal-container-title {
+    font-family: 'Aspekta';
+    font-size: 20px;
+    color: beige;
+    margin-bottom: 10px;
+}
+
+.legal-list {
+    box-shadow: 0 0 5px rgb(40, 40, 40);
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 10px;
+}
+
+.legal-summary {
+    font-family: 'Aspekta';
+    font-size: 20px;
+    color: #808080;
+    align-items: center;
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.legal-content {
+    font-family: 'Aspekta';
+}
+
+.legal-description {
+    font-family: 'Aspekta';
+    font-size: 15px;
+    padding: 15px;
+    color: #808080;
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.legal-feature {
+    font-family: 'Aspekta';
+    font-size: 15px;
+    color: #ff6252;
+}
+
+.legal-explanation {
+    font-family: 'Aspekta';
+    font-size: 15px;
+    color: #808080;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+    .legal-section {
+        padding: 15px;
+        margin: 20px auto;
+    }
+    
+    .legal-category {
+        font-size: 24px;
+    }
+
+    .legal-container {
+        font-size: 24px;
+    }
+
+    .legal-container-description {
+        font-size: 14px;
+    }
+
+    .legal-container-title {
+        font-size: 20px; 
+    }
+
+    .legal-summary {
+        font-size: 18px;
+    }
+
+    .legal-description {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .legal-feature,
+    .legal-explanation {
+        font-size: 14px;
+    }
+
+    .legal-list {
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .container {
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+}

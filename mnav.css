@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'Aspekta';
+    src: url('fonts/Aspekta-100.ttf') format('truetype');
+    font-weight: light;
+    font-style: light;
+}
+
+@font-face {
+    font-family: 'Aspekta';
+    src: url('fonts/Aspekta-500.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aspekta';
+    src: url('fonts/Aspekta-1000.ttf') format('truetype');
+    font-weight: bold;
+    font-style: bold;
+}
+
+header {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.hamburger i {
+    font-size: 2.5rem;
+    color: white;
+}
+
+@media (max-width: 995px) {
+    header {
+        padding: 1rem 9%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #0c0c0c;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+        font-weight: normal;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #171717;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0;
+        z-index: 1000;
+        opacity: 0;
+    }
+
+    nav.active {
+        color: #ff6252;
+        display: flex;
+        opacity: 1;
+    }
+
+    .active {
+        color: #ff6252;
+    }
+
+    nav a {
+        font-family: 'Aspekta';
+        margin: 1rem 0;
+        font-size: 2rem;
+        color: white;
+        text-align: center;
+        width: 100%;
+        transition: color 0.3s;
+        text-decoration: none;
+    }
+    
+    nav a:hover {
+        font-family: 'Aspekta';
+        color: #ff6252;
+        text-decoration: none;
+    }
+}

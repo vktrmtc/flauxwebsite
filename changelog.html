@@ -10,6 +10,7 @@
     <link nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js">
     <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
     <script src="script.js"></script>
+    <link rel="stylesheet" href="changelog.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mnav.css">
     <link rel="stylesheet" href="nav.css">
@@ -21,8 +22,8 @@
             <i class="fas fa-bars"></i>
         </div>
         <nav id="navMenu">
-            <a href="index.html" class="active"><i class="fa-solid fa-house"></i> Home</a>
-            <a href="changelog.html"><i class="fa-solid fa-wand-magic-sparkles"></i> Changelog</a>
+            <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="changelog.html" class="active"><i class="fa-solid fa-wand-magic-sparkles"></i> Changelog</a>
             <a href="commands.html"><i class="fa-solid fa-terminal"></i> Commands</a>
             <a onclick="openSupportPopup()"><i class="fa-brands fa-discord"></i> Support</a>
             <a href="legal.html"><i class="fa-solid fa-paperclip"></i> Legal</a>
@@ -40,7 +41,7 @@
               </svg>
             </a>
           </li>
-          <li class="navbar-item flexbox-left active">
+          <li class="navbar-item flexbox-left">
             <a class="navbar-item-inner flexbox-left" href="index.html">
                 <div class="navbar-item-inner-icon-wrapper flexbox">
                     <i class="fa-solid fa-house"></i>
@@ -48,7 +49,7 @@
                 <span class="link-text">Home</span>
             </a>
         </li>     
-          <li class="navbar-item flexbox-left">
+          <li class="navbar-item flexbox-left active">
             <a class="navbar-item-inner flexbox-left" href="changelog.html">
               <div class="navbar-item-inner-icon-wrapper flexbox">
                 <i class="fa-solid fa-wand-magic-sparkles"></i>
@@ -61,7 +62,7 @@
               <div class="navbar-item-inner-icon-wrapper flexbox">
                 <i class="fa-solid fa-terminal"></i>
               </div>
-              <span class="link-text">Commands</span>
+              <span class="link-text"> Commands</span>
             </a>
           </li>
           <li class="navbar-item flexbox-left">
@@ -83,35 +84,48 @@
         </ul>
     </nav>
 
-    <div class="homepage-flaux">
-        <div class="homepage-flaux-content">
-            <h1 class="homepage-title">Keep your server active with Flaux</h1>
-            <p class="homepage-description">
-                Flaux is designed to enhance your Discord server by boosting engagement and streamlining server management. From rewarding active members to ensuring important information is always seen, Flaux is packed with powerful features to help you run a more efficient and vibrant community.
-            </p>
-            <p class="homepage-description">
-                To discover more commands, including Purge, Echo, Sticky Messages, Logging System, Welcome Messages, and Message Auto Reactions, invite the app and try them out!
-            </p>
-            <div class="homepage-buttons">
-                <button class="homepage-button" onclick="openPopup()">Add App</button>
-                <button class="homepage-button feedback-button" onclick="location.href='commands.html'">View Commands</button>
-                <button class="homepage-button feedback-button">Send Feedback</button>
-            </div>
+    <div class="container">
+      <div class="changelog-section">
+        <h1 class="changelog-category">Changelog - [2.1.7]</h1>
+        <div class="changelog-container">
+          <p class="changelog-container-description">21 September 2024</p>
+          <div class="changelog-list">
+            <h1 class="changelog-container-title">New Commands:</h1>
+            <p class="changelog-explanation">
+                <span class="changelog-feature">/blocked-roles toggle:</span> Enables you to toggle specific roles to block them from earning entries in the chat rewards system. Add or remove a role from the list, ensuring that users with blocked roles will no longer earn entries.</p>
+            <p class="changelog-explanation">
+                <span class="changelog-feature">/blocked-roles list:</span> Lists all roles that are currently blocked from earning entries. Displays a list of roles that are prohibited from earning entries.</p>
+                <h1 class="changelog-container-title down20">Other Changes:</h1>
+            <p class="changelog-container-description">Bug fixes.</p>
+          </div>
         </div>
-        <img src="assets/flauxphone.png" alt="Flaux Phone Image">
-    </div>
+      </div>
 
-    <div id="feedbackModal" class="modal">
-        <div class="modal-content">
-            <h2>Share your feedback!</h2>
-            <textarea id="message" rows="5" placeholder="Type your feedback here..."></textarea>
-            <button class="send-button" onclick="sendMessage()">
-                <i class="fas fa-paper-plane"></i> Send Feedback
-            </button>
-            <button class="close-button" onclick="closeModal()">Close</button>
+      <div class="container">
+        <div class="changelog-section">
+          <h1 class="changelog-category">Changelog - [2.1.6]</h1>
+          <div class="changelog-container">
+            <p class="changelog-container-description">17 September 2024</p>
+            <div class="changelog-list">
+            <p class="changelog-container-description">Improved webhook validation to automatically handle and recreate missing webhooks, preventing crashes during role updates and other events.</p>
+            <p class="changelog-container-description">Fixed an issue where the bot would crash due to missing or deleted webhooks when attempting to send messages.</p>
+            <p class="changelog-container-description">Bug fixes.</p>
+            </div>
+          </div>
         </div>
-    </div>    
-     
+
+        <div class="container">
+            <div class="changelog-section">
+              <h1 class="changelog-category">Changelog - [2.1.5]</h1>
+              <div class="changelog-container">
+                <p class="changelog-container-description">30 August 2024</p>
+                <div class="changelog-list">
+                    <h1 class="changelog-container-title">New Command:</h1>
+                        <p class="changelog-explanation">
+                            <span class="changelog-feature">/vote:</span> Users can now earn 10-50 entries by voting if the Chat Rewards system is set up in your server. You can claim entries once every 12 hours.</p>
+                </div>
+              </div>
+            </div>
 
     <footer class="footer">
         </ul>
