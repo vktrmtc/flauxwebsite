@@ -104,12 +104,3 @@ function openPopup() {
     const url = 'https://discord.com/oauth2/authorize?client_id=1263669451191226379&permissions=8&integration_type=0&scope=bot+applications.commands';
     openCenteredPopup(url, 'Add App', 600, 600);
 }
-
-
-// dashboard
-fetch('https://flauxbot.com/api/bot-status')
-    .then(response => response.json())
-    .then(data => {
-        document.getElementById('bot-status').innerText = data.status;
-        document.getElementById('server-count').innerText = data.servers;
-    });
