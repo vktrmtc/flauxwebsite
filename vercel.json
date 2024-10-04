@@ -1,3 +1,21 @@
-{
+{ 
+ "rewrites": [
+    {
+      "source": "/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/changelog",
+      "destination": "/views/changelog.html"
+    },
+    {
+      "source": "/commands",
+      "destination": "/views/commands.html"
+    },
+    {
+      "source": "/legal",
+      "destination": "/views/legal.html"
+    }
+  ],
   "cleanUrls": true
 }
