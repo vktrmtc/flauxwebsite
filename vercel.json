@@ -2,7 +2,7 @@
   "redirects": [
     {
       "source": "/views",
-      "destination": "/404",
+      "destination": "/views/commands",
       "statusCode": 404
     }
   ]
